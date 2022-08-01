@@ -12,6 +12,7 @@ app.use("/api/", router)
 
 //definição da porta
 const port = config.get<number>("port")
+
 app.listen(port, async () =>{
     console.log(`Aplicação rodando na porta: ${port}`)
 })
